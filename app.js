@@ -41,7 +41,7 @@ const accountTypeChecker = (accountBalanceHistory) => {
       return "Error: Input data is invalid";
     }
     if (previousBalAmount < 0) {
-      //if balance amount is increasing compared to previous month.
+      //if balance amount is negative.
       return `Error: Balance amount (${previousBalAmount}) is negative`;
     }
     let diff = presentBalAmount - previousBalAmount;
